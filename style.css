@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+html {
+  scroll-behavior:smooth ;
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  width: 3em;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 auto 1em;
+}
+
+.all {
+  background-image: url(/images/web\ b.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: -10px;
+  height: 100vh;
+}
+
+body {
+  height: 100%;
+  background-color: rgb(40, 41, 52);
+  overflow: scroll;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: transparent;
+  color: rgb(194, 173, 173); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 40px; /* Increase font size */
+  transform: translate(ease-in-out);
+}
+
+#myBtn:hover {
+  color: rgb(194, 25, 25); /* Add a dark-grey background on hover */
+}
+
+/* Header styling  */
+.heads {
+  display: flex;
+  overflow: hidden;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  height: 60%;
+  width: auto;
+}
+.links {
+  padding: 8% 50% 0 10%;
+  display: flex;
+  gap: 50%;
+  float: none;
+}
+@media screen and (max-width: 500px) {
+  .links {
+    float: none;
+  }
+}
+
+.links a {
+  text-decoration: none;
+  color: rgb(249, 244, 255);
+  font-size: 150%;
+  height: 30px;
+  border: 100% solid black;
+  cursor: pointer;
+  /* font-family: "RalewayRegular"; */
+  transform: none;
+  transition: color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  /* outline: rgb(255, 0, 0) dashed 1px; */
+  box-sizing: border-box;
+}
+
+.links a:hover {
+  color: aqua;
+}
+/* Header styling end */
+
+/* Social icons styling */
+.social-icons {
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  margin-top: -35%;
+}
+#line{
+  border-right: 19px rgb(167, 4, 4);
+  height: 100px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  /* border: 3px solid white; */
+  background: transparent;
+  color: rgb(238, 198, 198);
+}
+.fa:hover {
+  color: rgba(201, 140, 83, 0.527);
+}
+/* Social icons styling end */
+
+/* Main styling */
+.main{
+  padding: 6%;
+}
+.tags{
+  /* padding-top: 5%; */
+  font-size: 5em;
+  font-weight: 70;
+}
+.tags span{
+  font-size: 2rem;
+}
+.main-button {
+  text-align: center;
+  margin-top: 1%;
+  /* margin: 26.5% 0 31% 0; */
+}
+button.butt {
+  background-color: transparent;
+  border: none;
+}
+.butt a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 150%;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  /* margin-top: 40px; */
+  letter-spacing: 4px;
+  background-color: transparent;
+  border: none;
+  background: transparent;
+}
+.butt a:hover {
+  background-color: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4 0 0 5px #03e9f4 0 0 5px #03e9f4 0 0 5px #03e9f4;
+}
+/* Main styling end */
+
+/* Skills styling */
+#my-skills {
+  padding-top: 5%;
+  background-color: #313341;
+  box-shadow: rgba(246, 246, 248, 0.2) 0px 7px 29px 0px;
+}
+.skills div {
+  display: flex;
+  flex-direction: column;
+}
+.skill-header {
+  /* padding-left: 5%; */
+  text-align: center;
+  color: #f0f8ff;
+}
+#my-skills div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+}
+.skills div:hover {
+  filter: drop-shadow(8px 8px 4px rgb(110, 164, 194));
+}
+.skills div img{
+  min-width: 100px;
+}
+.skills h3:hover {
+  color: aqua;
+}
+/* Skills styling end */
+
+/* About styling */
+#about {
+  background-color: #313341;
+  padding-top: 5%;
+  box-shadow: rgba(246, 246, 248, 0.2) 0px 7px 29px 0px;
+  margin-top: 5%;
+}
+.about-header {
+  /* padding-left: 5%; */
+  text-align: center;
+  color: #f0f8ff;
+}
+.about-para {
+  font-size: 180%;
+  padding-left: 5%;
+  color: #fff;
+}
+/* About styling end */
+
+/* Projects styling */
+
+.project-header {
+  /* padding-left: 5%; */
+  text-align: center;
+  color: #f0f8ff;
+}
+.prj-pics {
+  height: 190px;
+  width: auto;
+}
+#projects div {
+  display: flex;
+  justify-content: space-around;
+}
+#projects {
+  background-color: #313341;
+  padding-top: 5%;
+  box-shadow: rgba(246, 246, 248, 0.2) 0px 7px 29px 0px;
+  margin-top: 5%;
+}
+/* Projects styling end */
+
+/* Experience styling */
+#experience {
+  padding: 5%;
+  margin-top: 5%;
+  background-color: #313341;
+  box-shadow: rgba(246, 246, 248, 0.2) 0px 7px 29px 0px;
+}
+.experience-header {
+  /* padding-left: 5% */
+  padding-top: 10px;
+  text-align: center;
+  color: #f0f8ff;
+}
+/* Experience styling end */
+
+/* Scrollbar styling */
+/* width */
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(82, 17, 17);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3d3e4b;
+  border-radius: 10px;
+}
+
+
+.cancelbtn {
+  padding: 24% 21% 30% 42%;
+}
+.cancelbtn {
+  background-color: transparent;
+  border: none;
+}
+.cancelbtn {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 100%;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  /* margin-top: 40px; */
+  letter-spacing: 4px;
+  background-color: transparent;
+  border: none;
+  background: transparent;
+}
+.cancelbtn:hover {
+  background-color: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4 0 0 5px #03e9f4 0 0 5px #03e9f4 0 0 5px #03e9f4;
+}
+
+
+/* Center the loader */
+#loader {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+#myDiv {
+  /* display: none; */
+  text-align: center;
+}
+

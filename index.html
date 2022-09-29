@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M.I.S portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org//face/raleway"
+      type="text/css"
+    />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="contact.css">
+    <script>
+    var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+      }
+      
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+      }
+      </script>
+  </head>
+  <body onload="myFunction()" style="margin:0;"  style="display:none;" id="myDiv" class="animate-bottom">
+    
+     <!-- <div id="loader"></div> -->
+ 
+     <button onclick="topFunction()" id="myBtn" title="Go to top">‸</button>
+
+    <div class="all">
+      <!-- Header -->
+      <div class="heads">
+        <div class="links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#my-skills">Skills</a>
+        </div>
+      </div>
+      <!-- Header end -->
+
+      <!-- Main body -->
+      <div class="main">
+        <header class="tags" style="color: rgb(250, 242, 242);">MIS <br><span>WEB DEVELOPER</span></br></header>
+          <div class="main-button"> 
+          <button class="butt"><a href="#contact"><strong>Contact me</strong></a></button>
+          </div>
+      </div>
+      <!-- Main body end -->
+    </div>
+
+    <!-- About -->
+
+    <!-- About end -->
+
+    <!-- My Skills -->
+    <div id="my-skills">
+      <hr/>
+      <h1 class="skill-header">Skills</h1>
+      <hr/>
+      <div class="skills">
+        <div>
+          <img src="/images/icons8-html-5-256.png" alt="" />
+          <h3>HTML 5</h3>
+        </div>
+        <div>
+          <img
+            style="height: 150px; padding: 5px"
+            src="/images/icons8-css-96.png"
+            alt=""
+          />
+          <h3>CSS 3</h3>
+        </div>
+        <div>
+          <img src="/images/icons8-javascript-240.png" alt="" />
+          <h3>Javascript</h3>
+        </div>
+      </div>
+    </div>
+    <!-- My skills end -->
+
+    <!-- Projects -->
+    <div id="projects">
+      <hr/>
+      <h1 class="project-header">Projects</h1>
+      <hr/>
+      <div>
+        <a href="../Coming soon/index.html"
+          ><img
+            class="prj-pics"
+            src="/images/pexels-bri-schneiter-346529.jpg"
+            alt=""
+        /></a>
+        <a href="../architect/index.html"
+          ><img
+            class="prj-pics"
+            src="/images/pexels-longxiang-qian-1849115.jpg"
+            alt=""
+        /></a>
+      </div>
+    </div>
+
+    <div id="about">
+      <hr/>
+      <h1 class="about-header">About</h1>
+      <hr/>
+      <p class="about-para">
+        Hello World, My name is Muhammad Ibrahim Shehu, front-end developer based in Kano,
+        Nigera. I enjoy creating accessible, interactive websites focused on
+        user experience. My interest in web development started back in 2020 when I had too much time on my hands and spent too much time online. I started with a little bit of html and got serious about it late 2021. Now I'm a Junior front-end developer working freelance but plan on expanding my range.
+      </p>
+    </div>
+
+    <div id="experience">
+      <hr/>
+      <h1 class="experience-header">Experience</h1>
+      <hr/>
+    </div>
+    
+      <div class="login-box">
+        <h2 id="contact">Contact me</h2>
+        <form action="mailto:babasmuhammad617@gmail.com"
+        method="get">
+          <div class="user-box">
+            <input type="text" name="Username" required="" />
+            <label for="userName">Name</label>
+          </div>
+          <div class="user-box">
+            <input type="email" name="Email" required="" />
+            <label for="emailAddress">Email address</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="Subject" required="" />
+            <label for="subject">Subject</label>
+          </div>
+          
+          <textarea
+          class="text-area"
+            name="write-area"
+            id="write-area"
+            placeholder="Reach out to me lets work together :)"
+            cols="47"
+            rows="7"
+           style="background: transparent; outline: none;"></textarea>
+          <a href="mailto:babasmuhammad617@gmail.com">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Submit
+          </a>
+          <button type="reset" class="cancelbtn">Reset</button>
+      </div>
+      <!-- Social Media Buttons HTML -->
+      <div class="social-icons">
+        <a
+          href="https://facebook.com/Muhammad Shehu"
+          class="fa fa-facebook"
+        ></a>
+        <a href="https://twitter.com/baboosh315" class="fa fa-twitter"></a>
+        <a href="http://wa.me/2348126288557 " class="fa fa-whatsapp"></a>
+        <a href="https://instagram.com/mis6_17" class="fa fa-instagram"></a>
+        <a href="https://github.com/baboosh617" class="fa fa-github"></a>
+      </div>
+      <!-- End Social Media Buttons HTML -->
+      <div id="line"></div>
+   <script>
+   //Get the button:
+    mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+</script>
+  </body>
+</html>
+
+
