@@ -31,6 +31,7 @@ body {
   overflow: scroll;
 }
 
+/* scroll to top button */
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -47,10 +48,10 @@ body {
   font-size: 40px; /* Increase font size */
   transform: translate(ease-in-out);
 }
-
 #myBtn:hover {
   color: rgb(194, 25, 25); /* Add a dark-grey background on hover */
 }
+/* scroll to top end */
 
 /* Header styling  */
 .heads {
@@ -71,12 +72,6 @@ body {
   gap: 50%;
   float: none;
 }
-@media screen and (max-width: 500px) {
-  .links {
-    float: none;
-  }
-}
-
 .links a {
   text-decoration: none;
   color: rgb(249, 244, 255);
@@ -90,7 +85,6 @@ body {
   /* outline: rgb(255, 0, 0) dashed 1px; */
   box-sizing: border-box;
 }
-
 .links a:hover {
   color: aqua;
 }
@@ -102,10 +96,6 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: -35%;
-}
-#line{
-  border-right: 19px rgb(167, 4, 4);
-  height: 100px;
 }
 .fa {
   padding: 20px;
@@ -220,7 +210,6 @@ button.butt {
 /* About styling end */
 
 /* Projects styling */
-
 .project-header {
   /* padding-left: 5%; */
   text-align: center;
@@ -274,7 +263,7 @@ button.butt {
   background: #3d3e4b;
   border-radius: 10px;
 }
-
+/* scroll bar end */
 
 .cancelbtn {
   padding: 24% 21% 30% 42%;
