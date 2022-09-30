@@ -123,6 +123,7 @@ body {
   font-weight: 70;
 }
 .tags span{
+  margin-top: 3%;
   font-size: 2rem;
 }
 .main-button {
@@ -266,13 +267,8 @@ button.butt {
 /* scroll bar end */
 
 .cancelbtn {
+  margin-bottom: 4%;
   padding: 24% 21% 30% 42%;
-}
-.cancelbtn {
-  background-color: transparent;
-  border: none;
-}
-.cancelbtn {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
@@ -349,6 +345,7 @@ button.butt {
 
 
 footer{
+  padding: 1%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -357,4 +354,8 @@ footer{
 }
 footer .copy{
   margin-top: 3%;
+}
+.copy p{
+  color: #f0f8ff;
+  font-size: 1.5em;
 }
