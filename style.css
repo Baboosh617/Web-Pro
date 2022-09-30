@@ -351,4 +351,10 @@ button.butt {
 footer{
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  background-color: #313341;
+  box-shadow: rgba(246, 246, 248, 0.2) 0px 7px 29px 0px;
+}
+footer .copy{
+  margin-top: 3%;
 }
