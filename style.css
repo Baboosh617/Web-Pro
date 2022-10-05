@@ -54,13 +54,53 @@ body {
 /* scroll to top end */
 
 /* Header styling  */
-.heads {
-  display: flex;
-  overflow: hidden;
-}
 .header {
-  display: flex;
-  justify-content: space-between;
+  overflow: hidden;
+  background-color: transparent;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: #f0f8ff;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 150%; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: transparent;
+  color: #03e9f4;
+  transition: 0.5s ease-in-out;
+}
+
+.header a.active {
+  background-color: transparent;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
 }
 .logo {
   height: 60%;
@@ -69,7 +109,7 @@ body {
 .links {
   padding: 8% 50% 0 10%;
   display: flex;
-  gap: 50%;
+  gap: 30%;
   float: none;
 }
 .links a {
@@ -183,8 +223,9 @@ button.butt {
 .skills div:hover {
   filter: drop-shadow(8px 8px 4px rgb(110, 164, 194));
 }
-.skills div img{
-  min-width: 100px;
+.imgs{
+  width: 100%;
+  height: auto;
 }
 .skills h3:hover {
   color: aqua;
@@ -267,10 +308,8 @@ button.butt {
 /* scroll bar end */
 
 .cancelbtn {
-  margin-bottom: 8%;
-  padding: 24% 21% 30% 42%;
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
   padding: 10px 20px;
   color: #03e9f4;
   font-size: 100%;
@@ -278,11 +317,11 @@ button.butt {
   text-transform: uppercase;
   overflow: hidden;
   transition: 0.5s;
-  /* margin-top: 40px; */
+  margin-top: 40px;
   letter-spacing: 4px;
   background-color: transparent;
   border: none;
-  background: transparent;
+  float: right;
 }
 .cancelbtn:hover {
   background-color: #03e9f4;
@@ -356,6 +395,6 @@ footer .copy{
   margin-top: 3%;
 }
 .copy p{
-  color: #f0f8ff;
-  font-size: 1.5em;
+  color: #f0f6ff;
+  font-size: 1.5rem;
 }
