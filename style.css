@@ -4,6 +4,12 @@
   font-family: "Raleway", sans-serif;
 }
 
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
 html {
   scroll-behavior:smooth ;
 }
@@ -235,6 +241,9 @@ button.butt {
   height: auto;
 }
 .skills h3:hover {
+  color: aqua;
+}
+.skills h3 {
   color: aqua;
 }
 /* Skills styling end */
