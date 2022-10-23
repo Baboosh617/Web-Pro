@@ -185,14 +185,15 @@ body {
   /* margin: 26.5% 0 31% 0; */
 }
 button.butt {
-  background-color: transparent;
+  background-color:  #03e9f4;
   border: none;
+  
 }
 .butt a {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
-  color: #03e9f4;
+  color: #313341;
   font-size: 150%;
   text-decoration: none;
   text-transform: uppercase;

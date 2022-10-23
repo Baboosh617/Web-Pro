@@ -2,5 +2,10 @@
     .logo img {
         display: none;
     }
-    
+    .login-box .user-box input{
+        width: 100%;
+    }
+    .login-box{
+        width: 100%;
+    }
 }
