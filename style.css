@@ -210,7 +210,7 @@ button.butt {
   background-color: #313341;
   box-shadow: rgba(246, 246, 248, 0.2) 0px 7px 29px 0px;
 }
-.skills div {
+#skills div {
   display: flex;
   flex-direction: column;
 }
@@ -225,17 +225,17 @@ button.butt {
   align-items: center;
   transition: 0.5s ease-in-out;
 }
-.skills div:hover {
+#skills div:hover {
   filter: drop-shadow(8px 8px 4px rgb(110, 164, 194));
 }
 .imgs{
   width: 100%;
   height: auto;
 }
-.skills h3:hover {
+#skills h3:hover {
   color: aqua;
 }
-.skills h3 {
+#skills h3 {
   color: aqua;
 }
 /* Skills styling end */
