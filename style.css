@@ -27,7 +27,7 @@ hr {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: -5px;
+  /* margin: -2px; */
   height: 100vh;
 }
 
